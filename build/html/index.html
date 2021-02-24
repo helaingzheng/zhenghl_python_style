@@ -88,39 +88,51 @@
 <li><a class="reference internal" href="#">主要内容：</a></li>
 <li><a class="reference internal" href="#python">Python语言规范</a><ul>
 <li><a class="reference internal" href="#id2">导入</a></li>
-<li><a class="reference internal" href="#id5">包</a></li>
-<li><a class="reference internal" href="#id6">异常</a></li>
-<li><a class="reference internal" href="#id7">全局变量</a></li>
-<li><a class="reference internal" href="#id9">推导式&amp;生成式</a></li>
+<li><a class="reference internal" href="#id3">包</a></li>
+<li><a class="reference internal" href="#id4">异常</a></li>
+<li><a class="reference internal" href="#id5">全局变量</a></li>
+<li><a class="reference internal" href="#id7">推导式&amp;生成式</a></li>
 <li><a class="reference internal" href="#lambda">Lambda函数</a></li>
-<li><a class="reference internal" href="#id10">默认参数值</a></li>
+<li><a class="reference internal" href="#id8">默认参数值</a></li>
 <li><a class="reference internal" href="#true-false">True/False的求值</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#id11">Python风格规范</a><ul>
-<li><a class="reference internal" href="#id12">代码格式</a><ul>
-<li><a class="reference internal" href="#id13">分号</a></li>
+<li><a class="reference internal" href="#id9">Python风格规范</a><ul>
+<li><a class="reference internal" href="#id10">代码格式</a><ul>
+<li><a class="reference internal" href="#id11">分号</a></li>
 <li><a class="reference internal" href="#line-length">行长度</a></li>
-<li><a class="reference internal" href="#id18">括号</a></li>
+<li><a class="reference internal" href="#id14">括号</a></li>
 <li><a class="reference internal" href="#indentation">缩进</a></li>
-<li><a class="reference internal" href="#id20">序列元素尾部逗号</a></li>
-<li><a class="reference internal" href="#id22">空行</a></li>
-<li><a class="reference internal" href="#id23">空格</a></li>
+<li><a class="reference internal" href="#id16">序列元素尾部逗号</a></li>
+<li><a class="reference internal" href="#id17">空行</a></li>
+<li><a class="reference internal" href="#id18">空格</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#id24">命名</a></li>
-<li><a class="reference internal" href="#id25">注释</a></li>
-<li><a class="reference internal" href="#id27">其他</a><ul>
-<li><a class="reference internal" href="#id28">字符串</a></li>
-<li><a class="reference internal" href="#id29">导入格式</a></li>
-<li><a class="reference internal" href="#id30">语句</a></li>
+<li><a class="reference internal" href="#id19">命名</a><ul>
+<li><a class="reference internal" href="#id20"><strong>应该避免的名称</strong></a></li>
+<li><a class="reference internal" href="#id21"><strong>命名约定</strong></a></li>
+<li><a class="reference internal" href="#id22"><strong>文件名</strong></a></li>
+<li><a class="reference internal" href="#id23"><strong>推荐的规范</strong></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id24">注释</a><ul>
+<li><a class="reference internal" href="#id25"><strong>文档字符串</strong></a></li>
+<li><a class="reference internal" href="#id26"><strong>函数和方法</strong></a></li>
+<li><a class="reference internal" href="#id27"><strong>类</strong></a></li>
+<li><a class="reference internal" href="#id28"><strong>块注释和行注释</strong></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id30">其他</a><ul>
+<li><a class="reference internal" href="#id31">字符串</a></li>
+<li><a class="reference internal" href="#id32">导入格式</a></li>
+<li><a class="reference internal" href="#id33">语句</a></li>
 <li><a class="reference internal" href="#main">Main</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a class="reference internal" href="#id31">参考：</a></li>
-<li><a class="reference internal" href="#id32">扩展链接：</a></li>
+<li><a class="reference internal" href="#id34">参考：</a></li>
+<li><a class="reference internal" href="#id35">扩展链接：</a></li>
 </ul>
 </div>
             
@@ -191,6 +203,7 @@
   <div class="section" id="id1">
 <h1>主要内容：<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 <img alt="https://images.gitee.com/uploads/images/2021/0223/172828_94828327_8567454.png" src="https://images.gitee.com/uploads/images/2021/0223/172828_94828327_8567454.png" />
+<p>本文主要内容如上图，为从google-python-style摘取的部分常用规范。全部规范见参考链接或扩展链接。</p>
 </div>
 <div class="section" id="python">
 <h1>Python语言规范<a class="headerlink" href="#python" title="Permalink to this headline">¶</a></h1>
@@ -198,7 +211,7 @@
 <h2>导入<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>仅对包和模块使用导入,而不单独导入函数或者类。<a href="#id3"><span class="problematic" id="id4">`</span></a>typing`模块例外。</p>
+<p>仅对包和模块使用导入,而不单独导入函数或者类。typing模块例外</p>
 </div>
 <dl>
 <dt>定义:</dt><dd><p>模块间共享代码的重用机制.</p>
@@ -224,8 +237,8 @@
 </dd>
 </dl>
 </div>
-<div class="section" id="id5">
-<h2>包<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id3">
+<h2>包<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>使用模块的全路径名来导入每个模块</p>
@@ -262,8 +275,8 @@
 </dd>
 </dl>
 </div>
-<div class="section" id="id6">
-<h2>异常<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id4">
+<h2>异常<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>允许使用异常, 但必须小心</p>
@@ -276,10 +289,10 @@
 <dt>缺点:</dt><dd><p>可能会导致让人困惑的控制流. 调用库时容易错过错误情况.</p>
 </dd>
 <dt>结论:</dt><dd><p>异常必须遵守特定条件:</p>
-<ol class="arabic">
-<li><p>优先合理的使用内置异常类.比如 <code class="docutils literal notranslate"><span class="pre">ValueError</span></code> 指示了一个程序错误, 比如在方法需要正数的情况下传递了一个负数错误.不要使用 <code class="docutils literal notranslate"><span class="pre">assert</span></code> 语句来验证公共API的参数值. <code class="docutils literal notranslate"><span class="pre">assert</span></code> 是用来保证内部正确性的,而不是用来强制纠正参数使用.若需要使用异常来指示某些意外情况,不要用 <code class="docutils literal notranslate"><span class="pre">assert</span></code>,用 <code class="docutils literal notranslate"><span class="pre">raise</span></code> 语句,例如:</p>
-<blockquote>
-<div><p>Yes:</p>
+<ol class="arabic simple">
+<li><p>优先合理的使用内置异常类.比如 <code class="docutils literal notranslate"><span class="pre">ValueError</span></code> 指示了一个程序错误, 比如在方法需要正数的情况下传递了一个负数错误.不要使用 <code class="docutils literal notranslate"><span class="pre">assert</span></code> 语句来验证公共API的参数值. <code class="docutils literal notranslate"><span class="pre">assert</span></code> 是用来保证内部正确性的,而不是用来强制纠正参数使用.若需要使用异常来指示某些意外情况,不要用 <code class="docutils literal notranslate"><span class="pre">assert</span></code>,用 <code class="docutils literal notranslate"><span class="pre">raise</span></code> 语句,例如:</p></li>
+</ol>
+<p>Yes:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">connect_to_next_port</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">minimum</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Connects to the next available port.</span>
 
@@ -322,8 +335,7 @@
     <span class="k">return</span> <span class="n">port</span>
 </pre></div>
 </div>
-</div></blockquote>
-</li>
+<ol class="arabic simple">
 <li><p>模块或包应该定义自己的特定域的异常基类, 这个基类应该从内建的Exception类继承. 模块的异常基类后缀应该叫做 <code class="docutils literal notranslate"><span class="pre">Error</span></code>.</p></li>
 <li><p>永远不要使用 <code class="docutils literal notranslate"><span class="pre">except:</span></code> 语句来捕获所有异常, 也不要捕获 <code class="docutils literal notranslate"><span class="pre">Exception</span></code> 或者 <code class="docutils literal notranslate"><span class="pre">StandardError</span></code> , 除非你打算重新触发该异常, 或者你已经在当前线程的最外层(记得还是要打印一条错误消息). 在异常这方面, Python非常宽容, <code class="docutils literal notranslate"><span class="pre">except:</span></code> 真的会捕获包括Python语法错误在内的任何错误. 使用 <code class="docutils literal notranslate"><span class="pre">except:</span></code> 很容易隐藏真正的bug.</p></li>
 <li><p>尽量减少try/except块中的代码量. try块的体积越大, 期望之外的异常就越容易被触发. 这种情况下, try/except块将隐藏真正的错误.</p></li>
@@ -332,8 +344,8 @@
 </dd>
 </dl>
 </div>
-<div class="section" id="id7">
-<h2>全局变量<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id5">
+<h2>全局变量<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>避免全局变量</p>
@@ -347,12 +359,12 @@
 </dd>
 <dt>结论:</dt><dd><p>避免使用全局变量.
 鼓励使用模块级的常量,例如 <code class="docutils literal notranslate"><span class="pre">MAX_HOLY_HANDGRENADE_COUNT</span> <span class="pre">=</span> <span class="pre">3</span></code>.注意常量命名必须全部大写,用 <code class="docutils literal notranslate"><span class="pre">_</span></code> 分隔.具体参见 <a class="reference external" href="https://google.github.io/styleguide/pyguide.html#s3.16-naming">命名规则</a>
-若必须要使用全局变量,应在模块内声明全局变量,并在名称前 <code class="docutils literal notranslate"><span class="pre">_</span></code> 使之成为模块内部变量.外部访问必须通过模块级的公共函数.具体参见 <a href="#id33"><span class="problematic" id="id34">`命名规则 &lt;&gt;`_</span></a></p>
+若必须要使用全局变量,应在模块内声明全局变量,并在名称前 <code class="docutils literal notranslate"><span class="pre">_</span></code> 使之成为模块内部变量.外部访问必须通过模块级的公共函数.</p>
 </dd>
 </dl>
 </div>
-<div class="section" id="id9">
-<h2>推导式&amp;生成式<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id7">
+<h2>推导式&amp;生成式<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>可以在简单情况下使用</p>
@@ -430,8 +442,8 @@
 </dd>
 </dl>
 </div>
-<div class="section" id="id10">
-<h2>默认参数值<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id8">
+<h2>默认参数值<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>适用于大部分情况.</p>
@@ -529,19 +541,19 @@
 </div>
 </div>
 <hr class="docutils" />
+<div class="section" id="id9">
+<h1>Python风格规范<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id10">
+<h2>代码格式<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="id11">
-<h1>Python风格规范<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="id12">
-<h2>代码格式<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="id13">
-<h3>分号<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
+<h3>分号<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>不要在行尾加分号, 也不要用分号将两条命令放在同一行.</p>
 </div>
 </div>
 <div class="section" id="line-length">
-<span id="id14"></span><h3>行长度<a class="headerlink" href="#line-length" title="Permalink to this headline">¶</a></h3>
+<span id="id12"></span><h3>行长度<a class="headerlink" href="#line-length" title="Permalink to this headline">¶</a></h3>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>每行不超过80个字符</p>
@@ -553,7 +565,7 @@
 <li><p>不便于换行，不包含空格的模块级字符串常量，比如url或者路径</p>
 <blockquote>
 <div><ol class="arabic simple">
-<li><p>Pylint 禁用注释.（例如：<a href="#id15"><span class="problematic" id="id16">``</span></a># pylint: disable=invalid-name）</p></li>
+<li><p>Pylint 禁用注释.（例如：# pylint: disable=invalid-name）</p></li>
 </ol>
 </div></blockquote>
 </li>
@@ -602,8 +614,8 @@
 <p>注意上面例子中的元素缩进; 你可以在本文的 <a class="reference internal" href="#indentation"><span class="std std-ref">缩进</span></a> 部分找到解释.</p>
 <p>另外在其他所有情况下，若一行超过80个字符，但 <a class="reference external" href="https://github.com/google/yapf/">yapf</a> 却无法将该行字数降至80个字符以下时，则允许该行超过80个字符长度.</p>
 </div>
-<div class="section" id="id18">
-<h3>括号<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id14">
+<h3>括号<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h3>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>宁缺毋滥的使用括号</p>
@@ -634,7 +646,7 @@
 </div>
 </div>
 <div class="section" id="indentation">
-<span id="id19"></span><h3>缩进<a class="headerlink" href="#indentation" title="Permalink to this headline">¶</a></h3>
+<span id="id15"></span><h3>缩进<a class="headerlink" href="#indentation" title="Permalink to this headline">¶</a></h3>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>用4个空格来缩进代码</p>
@@ -682,11 +694,11 @@
 </pre></div>
 </div>
 </div>
-<div class="section" id="id20">
-<h3>序列元素尾部逗号<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id16">
+<h3>序列元素尾部逗号<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h3>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>仅当 <code class="docutils literal notranslate"><span class="pre">]</span></code>, <code class="docutils literal notranslate"><span class="pre">)</span></code>, <code class="docutils literal notranslate"><span class="pre">}</span></code> 和末位元素不在同一行时，推荐使用序列元素尾部逗号. 当末位元素尾部有逗号时，元素后的逗号可以指示 <a class="reference external" href="https://pypi.org/project/yapf/">YAPF</a> 将序列格式化为每行一项.</p>
+<p>仅当 <code class="docutils literal notranslate"><span class="pre">]</span></code>, <code class="docutils literal notranslate"><span class="pre">)</span></code>, <code class="docutils literal notranslate"><span class="pre">}</span></code> 和末位元素不在同一行时，推荐使用序列元素尾部逗号. 当末位元素尾部有逗号时，元素后的逗号可以指示 <a class="reference external" href="https://pypi.org/project/yapf/">https://pypi.org/project/yapf/</a> 将序列格式化为每行一项.</p>
 </div>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Yes</span><span class="p">:</span>   <span class="n">golomb3</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
 <span class="n">Yes</span><span class="p">:</span>   <span class="n">golomb4</span> <span class="o">=</span> <span class="p">[</span>
@@ -706,16 +718,16 @@
 </pre></div>
 </div>
 </div>
-<div class="section" id="id22">
-<h3>空行<a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id17">
+<h3>空行<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h3>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>顶级定义之间空两行, 方法定义之间空一行</p>
 </div>
 <p>顶级定义之间空两行, 比如函数或者类定义. 方法定义, 类定义与第一个方法之间, 都应该空一行. 函数或方法中, 某些地方要是你觉得合适, 就空一行.</p>
 </div>
-<div class="section" id="id23">
-<h3>空格<a class="headerlink" href="#id23" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id18">
+<h3>空格<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h3>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>按照标准的排版规范来使用标点两边的空格</p>
@@ -790,15 +802,16 @@
 </div>
 </div>
 </div>
-<div class="section" id="id24">
-<h2>命名<a class="headerlink" href="#id24" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id19">
+<h2>命名<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h2>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>模块名写法: <code class="docutils literal notranslate"><span class="pre">module_name</span></code> ;包名写法: <code class="docutils literal notranslate"><span class="pre">package_name</span></code> ;类名: <code class="docutils literal notranslate"><span class="pre">ClassName</span></code> ;方法名: <code class="docutils literal notranslate"><span class="pre">method_name</span></code> ;异常名: <code class="docutils literal notranslate"><span class="pre">ExceptionName</span></code> ;函数名: <code class="docutils literal notranslate"><span class="pre">function_name</span></code> ;全局常量名: <code class="docutils literal notranslate"><span class="pre">GLOBAL_CONSTANT_NAME</span></code> ;全局变量名: <code class="docutils literal notranslate"><span class="pre">global_var_name</span></code> ;实例名: <code class="docutils literal notranslate"><span class="pre">instance_var_name</span></code> ;函数参数名: <code class="docutils literal notranslate"><span class="pre">function_parameter_name</span></code> ;局部变量名: <code class="docutils literal notranslate"><span class="pre">local_var_name</span></code> .
 函数名,变量名和文件名应该是描述性的,尽量避免缩写,特别要避免使用非项目人员不清楚难以理解的缩写,不要通过删除单词中的字母来进行缩写.
 始终使用 <code class="docutils literal notranslate"><span class="pre">.py</span></code> 作为文件后缀名,不要用破折号.</p>
 </div>
-<p><strong>应该避免的名称</strong></p>
+<div class="section" id="id20">
+<h3><strong>应该避免的名称</strong><a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h3>
 <blockquote>
 <div><ol class="arabic simple">
 <li><p>单字符名称, 除了计数器和迭代器,作为 <code class="docutils literal notranslate"><span class="pre">try/except</span></code> 中异常声明的 <code class="docutils literal notranslate"><span class="pre">e</span></code>,作为 <code class="docutils literal notranslate"><span class="pre">with</span></code> 语句中文件句柄的 <code class="docutils literal notranslate"><span class="pre">f</span></code>.</p></li>
@@ -806,7 +819,9 @@
 <li><p>双下划线开头并结尾的名称(Python保留, 例如__init__)</p></li>
 </ol>
 </div></blockquote>
-<p><strong>命名约定</strong></p>
+</div>
+<div class="section" id="id21">
+<h3><strong>命名约定</strong><a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h3>
 <blockquote>
 <div><ol class="arabic simple">
 <li><p>所谓”内部(Internal)”表示仅模块内可用, 或者, 在类内是保护或私有的.</p></li>
@@ -816,11 +831,15 @@
 <li><p>对类名使用大写字母开头的单词(如CapWords, 即Pascal风格), 但是模块名应该用小写加下划线的方式(如lower_with_under.py). 尽管已经有很多现存的模块使用类似于CapWords.py这样的命名, 但现在已经不鼓励这样做, 因为如果模块名碰巧和类名一致, 这会让人困扰.</p></li>
 </ol>
 </div></blockquote>
-<p><strong>文件名</strong></p>
+</div>
+<div class="section" id="id22">
+<h3><strong>文件名</strong><a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h3>
 <blockquote>
 <div><p>所有python脚本文件都应该以 <code class="docutils literal notranslate"><span class="pre">.py</span></code> 为后缀名且不包含 <code class="docutils literal notranslate"><span class="pre">-</span></code>.若是需要一个无后缀名的可执行文件,可以使用软联接或者包含 <code class="docutils literal notranslate"><span class="pre">exec</span> <span class="pre">&quot;$0.py&quot;</span> <span class="pre">&quot;$&#64;&quot;</span></code> 的bash脚本.</p>
 </div></blockquote>
-<p><strong>推荐的规范</strong></p>
+</div>
+<div class="section" id="id23">
+<h3><strong>推荐的规范</strong><a class="headerlink" href="#id23" title="Permalink to this headline">¶</a></h3>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 23%" />
@@ -881,17 +900,21 @@
 </tbody>
 </table>
 </div>
-<div class="section" id="id25">
-<h2>注释<a class="headerlink" href="#id25" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="id24">
+<h2>注释<a class="headerlink" href="#id24" title="Permalink to this headline">¶</a></h2>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>确保对模块, 函数, 方法和行内注释使用正确的风格</p>
 </div>
-<p><strong>文档字符串</strong></p>
+<div class="section" id="id25">
+<h3><strong>文档字符串</strong><a class="headerlink" href="#id25" title="Permalink to this headline">¶</a></h3>
 <blockquote>
 <div><p>Python有一种独一无二的的注释方式: 使用文档字符串. 文档字符串是包, 模块, 类或函数里的第一个语句. 这些字符串可以通过对象的 <code class="docutils literal notranslate"><span class="pre">__doc__</span></code> 成员被自动提取, 并且被pydoc所用. (你可以在你的模块上运行pydoc试一把, 看看它长什么样). 我们对文档字符串的惯例是使用三重双引号”””( <a class="reference external" href="http://www.python.org/dev/peps/pep-0257/">PEP-257</a> ). 一个文档字符串应该这样组织: 首先是一行以句号, 问号或惊叹号结尾的概述(或者该文档字符串单纯只有一行). 接着是一个空行. 接着是文档字符串剩下的部分, 它应该与文档字符串的第一行的第一个引号对齐. 下面有更多文档字符串的格式化规范.</p>
 </div></blockquote>
-<p><strong>函数和方法</strong></p>
+</div>
+<div class="section" id="id26">
+<h3><strong>函数和方法</strong><a class="headerlink" href="#id26" title="Permalink to this headline">¶</a></h3>
 <blockquote>
 <div><p>下文所指的函数,包括函数, 方法, 以及生成器.</p>
 <p>一个函数必须要有文档字符串, 除非它满足以下条件:</p>
@@ -986,7 +1009,9 @@
 </pre></div>
 </div>
 </div></blockquote>
-<p><strong>类</strong></p>
+</div>
+<div class="section" id="id27">
+<h3><strong>类</strong><a class="headerlink" href="#id27" title="Permalink to this headline">¶</a></h3>
 <blockquote>
 <div><p>类应该在其定义下有一个用于描述该类的文档字符串. 如果你的类有公共属性(Attributes), 那么文档中应该有一个属性(Attributes)段. 并且应该遵守和函数参数相同的格式.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">SampleClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
@@ -1010,7 +1035,9 @@
 </pre></div>
 </div>
 </div></blockquote>
-<p><strong>块注释和行注释</strong></p>
+</div>
+<div class="section" id="id28">
+<h3><strong>块注释和行注释</strong><a class="headerlink" href="#id28" title="Permalink to this headline">¶</a></h3>
 <blockquote>
 <div><p>最需要写注释的是代码中那些技巧性的部分. 如果你在下次 <a class="reference external" href="http://en.wikipedia.org/wiki/Code_review">代码审查</a> 的时候必须解释一下, 那么你应该现在就给它写注释. 对于复杂的操作, 应该在其操作开始前写上若干行注释. 对于不是一目了然的代码, 应在其行尾添加注释.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># We use a weighted dictionary search to find out where i is in</span>
@@ -1029,10 +1056,11 @@
 </div>
 </div></blockquote>
 </div>
-<div class="section" id="id27">
-<h2>其他<a class="headerlink" href="#id27" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="id28">
-<h3>字符串<a class="headerlink" href="#id28" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="id30">
+<h2>其他<a class="headerlink" href="#id30" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id31">
+<h3>字符串<a class="headerlink" href="#id31" title="Permalink to this headline">¶</a></h3>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>即使参数都是字符串, 使用%操作符或者格式化方法格式化字符串. 不过也不能一概而论, 你需要在+和%之间好好判定.</p>
@@ -1109,8 +1137,8 @@
 </pre></div>
 </div>
 </div>
-<div class="section" id="id29">
-<h3>导入格式<a class="headerlink" href="#id29" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id32">
+<h3>导入格式<a class="headerlink" href="#id32" title="Permalink to this headline">¶</a></h3>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>每个导入应该独占一行, <code class="docutils literal notranslate"><span class="pre">typing</span></code> 的导入除外</p>
@@ -1175,8 +1203,8 @@
 </pre></div>
 </div>
 </div>
-<div class="section" id="id30">
-<h3>语句<a class="headerlink" href="#id30" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id33">
+<h3>语句<a class="headerlink" href="#id33" title="Permalink to this headline">¶</a></h3>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>通常每个语句应该独占一行</p>
@@ -1233,13 +1261,13 @@
 </div>
 </div>
 <hr class="docutils" />
-<div class="section" id="id31">
-<h1>参考：<a class="headerlink" href="#id31" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id34">
+<h1>参考：<a class="headerlink" href="#id34" title="Permalink to this headline">¶</a></h1>
 <p><a class="reference external" href="https://github.com/zh-google-styleguide/zh-google-styleguide/tree/master/google-python-styleguide">https://github.com/zh-google-styleguide/zh-google-styleguide/tree/master/google-python-styleguide</a></p>
 </div>
 <hr class="docutils" />
-<div class="section" id="id32">
-<h1>扩展链接：<a class="headerlink" href="#id32" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id35">
+<h1>扩展链接：<a class="headerlink" href="#id35" title="Permalink to this headline">¶</a></h1>
 <p>Google开源项目风格指南：<a class="reference external" href="https://zh-google-styleguide.readthedocs.io/en/latest/google-python-styleguide/python_style_rules/#main">https://zh-google-styleguide.readthedocs.io/en/latest/google-python-styleguide/python_style_rules/#main</a></p>
 <p>python官方编程规范PEP8:<a class="reference external" href="https://www.python.org/dev/peps/pep-0008/#descriptive-naming-styles">https://www.python.org/dev/peps/pep-0008/#descriptive-naming-styles</a></p>
 </div>
