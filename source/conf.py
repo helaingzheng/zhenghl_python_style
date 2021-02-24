@@ -72,6 +72,8 @@ project = 'google_python_style'
 copyright = '2021, zheng'
 author = 'zheng'
 
+master_doc = 'index'   
+
 
 # -- General configuration ---------------------------------------------------
 
