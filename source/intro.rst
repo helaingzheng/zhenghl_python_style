@@ -1,4 +1,4 @@
-Google开源项目风格指南 (中文版)
+Google开源项目风格
 ================================
 
 * 在线文档托管在 ReadTheDocs : `在线阅读最新版本 <https://zhl-python-style.readthedocs.io/zh/latest/>`_
