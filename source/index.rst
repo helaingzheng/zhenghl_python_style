@@ -1,7 +1,7 @@
 主要内容：
 ================================
 
-.. image:: https://images.gitee.com/uploads/images/2021/0223/172828_94828327_8567454.png
+.. image:: outline.png
 
 本文主要内容如上图，为从google-python-style摘取的部分常用规范。全部规范见参考链接或扩展链接。
 
