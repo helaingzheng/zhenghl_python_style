@@ -25,6 +25,10 @@ author = 'zheng'
 master_doc = 'index'   
 
 
+html_title = u'Google 开源项目风格指南'
+htmlhelp_basename = 'zh-google-styleguide'
+html_add_permalinks = ''
+
 
 version = u''
 release = u''
@@ -44,51 +48,6 @@ if not on_rtd:  # only import and set the theme if we're building docs locally
     html_theme = 'sphinx_rtd_theme'
     html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
-# otherwise, readthedocs.org uses their theme by default, so no need to specify it
-
-html_title = u'Google 开源项目风格指南'
-htmlhelp_basename = 'zh-google-styleguide'
-html_add_permalinks = ''
-
-latex_engine = 'xelatex'
-file_insertion_enabled = False
-on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
-if on_rtd:
-    latex_elements = {
-        # The paper size ('letterpaper' or 'a4paper').
-        #'papersize': 'letterpaper',
-        # The font size ('10pt', '11pt' or '12pt').
-        #'pointsize': '10pt',
-        # Additional stuff for the LaTeX preamble.
-        'preamble': r'''
-        \hypersetup{unicode=true}
-        \usepackage{CJKutf8}
-        \DeclareUnicodeCharacter{00A0}{\nobreakspace}
-        \DeclareUnicodeCharacter{2203}{\ensuremath{\exists}}
-        \DeclareUnicodeCharacter{2200}{\ensuremath{\forall}}
-        \DeclareUnicodeCharacter{2286}{\ensuremath{\subseteq}}
-        \DeclareUnicodeCharacter{2713}{x}
-        \DeclareUnicodeCharacter{27FA}{\ensuremath{\Longleftrightarrow}}
-        \DeclareUnicodeCharacter{221A}{\ensuremath{\sqrt{}}}
-        \DeclareUnicodeCharacter{221B}{\ensuremath{\sqrt[3]{}}}
-        \DeclareUnicodeCharacter{2295}{\ensuremath{\oplus}}
-        \DeclareUnicodeCharacter{2297}{\ensuremath{\otimes}}
-        \begin{CJK}{UTF8}{gbsn}
-        \AtEndDocument{\end{CJK}}    ''',
-    }
-else:
-    latex_elements = {
-        'papersize' : 'a4paper',
-        'utf8extra' : '',
-        'inputenc'  : '',
-        'babel'     : r'''\usepackage[english]{babel}''',
-        'preamble' : r'''        \usepackage{ctex}        ''',
-    }
-latex_documents = [
-  ('contents', 'zh-google-styleguide.tex', u'Google 开源项目风格指南',
-   u'', 'manual'),
-]
-
 
 #Add sponsorship and project information to the template context.
 context = {
@@ -99,14 +58,6 @@ context = {
 }
 
 html_context = context
-
-
-
-
-
-
-
-
 
 
 
