@@ -73,7 +73,7 @@ copyright = '2021, zheng'
 author = 'zheng'
 
 master_doc = 'index'   
-html_title = 'AK-python-style'
+html_title = 'AK'
 
 # -- General configuration ---------------------------------------------------
 
